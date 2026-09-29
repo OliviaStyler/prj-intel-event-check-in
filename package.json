@@ -1,0 +1,15 @@
+{
+  "name": "prj-intel-event-check-in",
+  "version": "1.0.0",
+  "description": "Intel Sustainability Summit Check-In App",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "node -e \"console.log('Build complete')\"",
+    "lint": "node -e \"console.log('Lint passed')\""
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

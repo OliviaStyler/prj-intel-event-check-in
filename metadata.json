@@ -1,0 +1,8 @@
+{
+  "name": "Intel Sustainability Summit Check-In",
+  "description": "Event check-in and attendance tracker for the Intel Team Sustainability Summit.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
