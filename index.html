@@ -31,13 +31,21 @@
     <div class="attendance-tracker">
       <div class="attendance-header">
         <i class="fas fa-users"></i>
-        Attendance: <span id="attendeeCount">0</span>/50
+        Attendance: <span id="attendeeCount">0</span>/<span id="maxAttendeeCount">20</span>
       </div>
       <div class="progress-container">
         <div id="progressBar" class="progress-bar"></div>
       </div>
     </div>
     <div class="container">
+      <!-- Celebration box for goal reached (LevelUp 5pts) -->
+      <div id="celebrationBox" class="celebration-box">
+        <h2><i class="fas fa-trophy"></i> Goal Reached! Summit is at Full Attendance!</h2>
+        <p id="celebrationMessage">
+          We reached our 20-attendee goal! Congratulations to our winning team!
+        </p>
+      </div>
+
       <!-- Feedback message -->
       <p id="greeting"></p>
 
@@ -83,6 +91,23 @@
             <span class="team-count" id="powerCount">0</span>
           </div>
         </div>
+      </div>
+
+      <!-- Attendee List (LevelUp 10pts) -->
+      <div class="attendee-section" id="attendeeSection">
+        <div class="attendee-section-header">
+          <h3>
+            <i class="fas fa-users-line"></i> Attendees
+            <span id="attendeeListCount" class="attendee-count-badge">0</span>
+          </h3>
+          <button type="button" id="resetDataBtn" class="clear-storage-btn" title="Reset all attendance data">
+            <i class="fas fa-rotate-left"></i> Reset Data
+          </button>
+        </div>
+        <div id="attendeeEmptyState" class="attendee-empty">
+          <i class="fas fa-clipboard-user"></i> No attendees have checked in yet.
+        </div>
+        <ul id="attendeeList" class="attendee-list"></ul>
       </div>
     </div>
 
